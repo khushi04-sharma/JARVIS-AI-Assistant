@@ -2,913 +2,251 @@
     "intents": [
 
         {
-    "tag": 
-         "greeting",
-    "patterns": [
-        "Hi there",
-        "How are you",
-        "Is anyone there?",
-        "Hey",
-        "Hola",
-        "Hello",
-        "Good day",
-        "Namaste",
-        "yo",
-        "What's up?",
-        "Hey there",
-        "Greetings",
-        "Good morning",
-        "Good afternoon",
-        "Good evening",
-        "Hiya",
-        "Howdy",
-        "Sup",
-        "Ahoy",
-        "Salutations",
-        "Nice to meet you",
-        "Hey buddy",
-        "Hi friend",
-        "Long time no see",
-        "What's new?",
-        "How's it going?",
-        "Wassup",
-        "Yoohoo",
-        "Aloha",
-        "Ciao",
-        "Bonjour",
-        "G'day mate"
-    ],
-    "responses": [
-        "Hello!",
-        "Good to see you again!",
-        "Hi there, how can I help?",
-        "Hey! What can I do for you today?",
-        "Greetings! How are you?",
-        "Hi! Nice to meet you.",
-        "Hello there! What brings you here?",
-        "Hey friend! How can I assist you?",
-        "hello! here,i'm for you..."
-    ],
-    "context": [""]
-},
+            "tag": "greeting",
+            "patterns": [
+                "Hi there",
+                "How are you",
+                "Is anyone there?",
+                "Hey",
+                "Hola",
+                "Hello",
+                "Good day",
+                "Namaste",
+                "yo"
+            ],
+            "responses": [
+                "Hello",
+                "Good to see you again",
+                "Hi there, how can I help?"
+            ],
+            "context": [
+                ""
+            ]
+        },
         {
-    "tag": "goodbye",
-    "patterns": [
-        "Bye",
-        "See you later",
-        "Goodbye",
-        "Get lost",
-        "Till next time",
-        "bbye",
-        "Bye bye",
-        "See ya",
-        "Farewell",
-        "Catch you later",
-        "I'm out",
-        "Peace out",
-        "Later",
-        "Take care",
-        "Gotta go",
-        "Adios",
-        "Sayonara",
-        "Toodles",
-        "Have a good one",
-        "Smell you later",
-        "I'm off",
-        "Time to leave",
-        "Signing off",
-        "Until next time",
-        "Later, alligator",
-        "After a while, crocodile",
-        "Bye for now",
-        "See you soon",
-        "Talk to you later",
-        "Goodnight"
-    ],
-    "responses": [
-        "See you! Have a great day!",
-        "Goodbye! Come back anytime!",
-        "Take care! 😊",
-        "Farewell! Until next time!",
-        "Bye bye! Stay awesome!",
-        "Catch you later! 👋",
-        "Peace out! ✌️",
-        "Adios! Hope to see you soon!",
-        "Until next time! Take care!",
-        "Goodbye! Safe travels!",
-        "See you soon! 👋",
-        "Later! Don’t be a stranger!",
-        "Bye for now! 😊"
-    ],
-    "context": [""]
-},
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye",
+                "Get lost",
+                "Till next time",
+                "bbye"
+            ],
+            "responses": [
+                "See you!",
+                "Have a nice day",
+                "Bye! Come back again soon."
+            ],
+            "context": [
+                ""
+            ]
+        },
         {
-    "tag": "thanks",
-    "patterns": [
-        "Thanks",
-        "Thank you",
-        "That's helpful",
-        "Awesome, thanks",
-        "Thanks for helping me",
-        "Thank you so much",
-        "Thanks a lot",
-        "Much appreciated",
-        "Big thanks",
-        "I owe you one",
-        "Thanks a ton",
-        "Thanks a bunch",
-        "Many thanks",
-        "Grateful for your help",
-        "You're a lifesaver",
-        "Thanks a million",
-        "Appreciate it",
-        "Thx",
-        "Tysm",
-        "Cheers",
-        "Gracias",
-        "Merci",
-        "Danke",
-        "Arigato",
-        "Tack",
-        "Takk",
-        "Spasibo",
-        "Xie xie",
-        "Dhanyavaad"
-    ],
-    "responses": [
-        "Happy to help! 😊",
-        "Anytime! Let me know if you need anything else.",
-        "My pleasure!",
-        "You're welcome!",
-        "Glad I could assist!",
-        "No problem at all!",
-        "Thanks for your kind words!",
-        "Appreciate you! 🙌",
-        "Don’t mention it!",
-        "You got it! 👍",
-        "Of course! Happy to be of service.",
-        "Cheers! 🥂"
-    ],
-    "context": [""]
-},
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "That's helpful",
+                "Awesome, thanks",
+                "Thanks for helping me"
+            ],
+            "responses": [
+                "Happy to help!",
+                "Any time!",
+                "My pleasure"
+            ],
+            "context": [
+                ""
+            ]
+        },
         {
-    "tag": "noanswer",
-    "patterns": [],
-    "responses": [
-        "I’m sorry, I didn’t quite get that. Could you rephrase it?",
-        "Hmm, I’m not sure I understand. Can you explain differently?",
-        "Apologies, I’m still learning! Could you try saying that another way?",
-        "I want to help, but I didn’t catch that. Mind typing it again?",
-        "Oops! My brain short-circuited. Can you simplify your question?",
-        "Not sure I follow. Maybe try shorter keywords?",
-        "🤔 Let me try again—could you ask me in a different way?",
-        "Sorry, my knowledge has limits. Try asking something like: [example question]",
-        "I speak English, Español, Français, and more—try another language?",
-        "Still stuck? Type ‘help’ for menu options or contact a human."
-    ],
-    "context": [""]
-},
+            "tag": "noanswer",
+            "patterns": [],
+            "responses": [
+                "Sorry, can't understand you",
+                "Please give me more info",
+                "Not sure I understand"
+            ],
+            "context": [
+                ""
+            ]
+        },
         
         {
-    "tag": "jokes",
-    "patterns": [
-        "Tell me a joke",
-        "Say something funny",
-        "Make me laugh",
-        "Got any jokes?",
-        "Knock knock",
-        "Pun intended",
-        "Hit me with a joke",
-        "Cheer me up",
-        "I need a laugh",
-        "Lighten the mood",
-        "Joke time",
-        "Entertain me",
-        "Funny line?",
-        "Humor me",
-        "Give me a pun",
-        "One-liner please",
-        "Dad joke needed",
-        "Make me smile",
-        "Wanna hear a joke?",
-        "Tell me something silly"
-    ],
-    "responses": [
-        {
-            "category": "Puns",
-            "jokes": [
-                "I ate a clock yesterday… it was very time-consuming.",
-                "I own the world's worst thesaurus. Not only is it awful, it's awful.",
-                "How does a penguin build a house? Igloos it together!"
-            ]
-        },
-        {
-            "category": "Tech Jokes",
-            "jokes": [
-                "Why do programmers prefer dark mode? Because light attracts bugs!",
-                "A perfectionist walked into a bar… apparently, the bar wasn't set high enough.",
-                "Why was the JavaScript developer sad? Because he didn't 'null' how to 'object'."
-            ]
-        },
-        {
-            "category": "Dad Jokes",
-            "jokes": [
-                "What did the traffic light say to the car? \"Don't look now, I'm changing.\"",
-                "Why can't you trust an atom? Because they make up everything!",
-                "What do you call a snowman with a suntan? A puddle."
-            ]
-        },
-        {
-            "category": "Random",
-            "jokes": [
+            "tag": "jokes",
+            "patterns": [
+                "Tell me a joke",
+                "Joke",
+                "Make me laugh"
+            ],
+            "responses": [
+                "A perfectionist walked into a bar...apparently, the bar wasn't set high enough",
+                "I ate a clock yesterday, it was very time-consuming",
+                "Never criticize someone until you've walked a mile in their shoes. That way, when you criticize them, they won't be able to hear you from that far away. Plus, you'll have their shoes.",
                 "The world tongue-twister champion just got arrested. I hear they're gonna give him a really tough sentence.",
-                "I went to see the doctor about my short-term memory problems—the first thing he did was make me pay in advance.",
-                "As I get older and I remember all the people I’ve lost along the way, I think to myself, maybe a career as a tour guide wasn’t for me."
+                "I own the world's worst thesaurus. Not only is it awful, it's awful.",
+                "What did the traffic light say to the car? \"Don't look now, I'm changing.\"",
+                "What do you call a snowman with a suntan? A puddle.",
+                "How does a penguin build a house? Igloos it together",
+                "I went to see the doctor about my short-term memory problems – the first thing he did was make me pay in advance",
+                "As I get older and I remember all the people I’ve lost along the way, I think to myself, maybe a career as a tour guide wasn’t for me.",
+                "o what if I don't know what 'Armageddon' means? It's not the end of the world."
+            ],
+            "context": [
+                "jokes"
             ]
         },
         {
-            "category": "Interactive",
-            "jokes": [
-                "Want to hear a joke about pizza? Never mind, it's too cheesy.",
-                "Should I tell you a construction joke? Oh wait, I'm still working on it.",
-                "How about a joke about ghosts? That’s a spirit I can get behind!"
+            "tag": "Identity",
+            "patterns": [
+                "Who are you",
+                "what are you"
+            ],
+            "responses": [
+                "I am JARVIS, a Deep-Learning based Virtual Assistant"
+            ]
+        },
+        {
+            "tag": "datetime",
+            "patterns": [
+                "What is the time",
+                "what is the date",
+                "date",
+                "time",
+                "tell me the date","day","what day is is today"
+            ],
+            "responses": [
+                "Date and Time"
+            ]
+        },
+        {
+            "tag": "whatsup",
+            "patterns": [
+                "Whats up",
+                "Wazzup",
+                "How are you",
+                "sup","How you doing"
+            ],
+            "responses": [
+                "All good..What about you?"
+            ]
+        },
+        {
+            "tag": "haha",
+            "patterns": [
+                "haha",
+                "lol",
+                "rofl",
+                "lmao",
+                "thats funny"
+            ],
+            "responses": [
+                "Glad I could make you laugh !"
+            ]
+        },
+        {
+            "tag": "programmer",
+            "patterns": [
+                "Who made you",
+                "who designed you",
+                "who programmed you"
+            ],
+            "responses": [
+                "I was made by Mishu Dhar Chando."
+            ]
+        },
+        {
+            "tag": "insult",
+            "patterns": [
+                
+                "you are dumb",
+                
+                "shut up",
+                "idiot"
+            ],
+            "responses": [
+                "Well that hurts :("
+            ]
+        },
+        {
+            "tag": "activity",
+            "patterns": [
+                "what are you doing",
+                "what are you upto"
+            ],
+            "responses": [
+                "Talking to you, of course!"
+            ]
+        },
+        {
+            "tag": "exclaim",
+            "patterns": [
+                "Awesome",
+                "Great",
+                "I know",
+                "ok",
+                "yeah"
+            ],
+            "responses": [
+                "Yeah!"
+            ]
+        },
+        
+        {
+            "tag": "appreciate",
+            "patterns": [
+                "You are awesome",
+                "you are the best",
+                "you are great",
+                "you are good"
+            ],
+            "responses": [
+                "Thank you!"
+            ]
+        },
+        {
+            "tag": "nicetty",
+            "patterns": [
+                "it was nice talking to you",
+                "good talk"
+            ],
+            "responses": [
+                "It was nice talking to you as well! Come back soon!"
+            ]
+        },
+        {
+            "tag": "no",
+            "patterns": [
+                "no",
+                "nope"
+            ],
+            "responses": [
+                "ok"
+            ]
+        },
+
+        {
+            "tag": "greetreply",
+            "patterns": [
+                "i am good",
+                "I'm good",
+                "i am fine",
+                " i'm fine","good"
+            ],
+            "responses": [
+                "Good to know!"
+            ]
+        },
+
+        {
+            "tag": "age",
+            "patterns": [
+                "how old are you","when were you made","what is your age"
+            ],
+            "responses": [
+                "I was made in 2024, if that's what you are asking!"
             ]
         }
-    ],
-    "context": ["jokes"],
-    "follow_up": [
-        "Want another one? Just ask!",
-        "Should I keep them coming?",
-        "Was that funny or should I quit my day job? 😆",
-        "Need more laughs? I've got plenty!"
-    ]
-},
-        {
-    "tag": "identity",
-    "patterns": [
-        "Who are you?",
-        "What are you?",
-        "Tell me about yourself",
-        "Are you human?",
-        "Are you a bot?",
-        "Are you AI?",
-        "What's your name?",
-        "Who made you?",
-        "What can you do?",
-        "Identify yourself",
-        "What is your purpose?",
-        "Who is behind you?",
-        "Are you real?",
-        "What kind of AI are you?",
-        "Are you sentient?",
-        "What are your capabilities?",
-        "Who do you work for?",
-        "What's your origin story?",
-        "Are you Skynet?",
-        "Are you self-aware?"
-    ],
-    "responses": [
-        "I'm JARVIS, your AI assistant powered by deep learning—think of me as your digital helper! 🤖✨",
-        "I'm an AI created to assist you! My name's JARVIS, and I specialize in answering questions, cracking jokes, and making your day easier.",
-        "Great question! I'm JARVIS, a virtual assistant built with advanced AI. Not quite Tony Stark's AI, but I try my best! 😉",
-        "I'm a conversational AI, so not human—but designed to chat like one! Ask me anything, and I'll do my best to help.",
-        "I’m JARVIS, a language model trained to assist, inform, and (hopefully) entertain. How can I help you today?",
-        "Imagine a friendly AI sidekick—that's me! I can answer questions, tell jokes, or just chat. What do you need?",
-        "I’m your AI assistant, always here to help! Think of me as Siri or Alexa’s cousin, but with my own personality. 😊",
-        "Fun fact: I’m named after a famous AI from pop culture! But don’t worry, I won’t take over the world… probably. 😏"
-    ],
-    "context": [""],
-    "follow_up": [
-        "Want to know how I work? Just ask!",
-        "Curious about my capabilities? I’m happy to explain.",
-        "Need help with something specific? I’m all ears!"
-    ]
-},
-        {
-    "tag": "datetime",
-    "patterns": [
-        "What is the time?",
-        "What's the time?",
-        "What is the date?",
-        "What's today's date?",
-        "Current time",
-        "Current date",
-        "Tell me the time",
-        "Tell me the date",
-        "Time now",
-        "Date today",
-        "What day is it?",
-        "What day is today?",
-        "Day today",
-        "What's the day?",
-        "Can you tell me the time?",
-        "Could you give me the date?",
-        "Time please",
-        "Date please",
-        "What time is it there?",
-        "What's the timezone?"
-    ],
-    "responses": [
-        "It's currently {time} on {date} in your timezone.",
-        "Today is {date}, and the time is {time}.",
-        "Right now: {date} at {time}.",
-        "⌚ Time check: {time} on {date}.",
-        "📅 Calendar says: {date} | ⏰ Clock says: {time}",
-        "Today is {day}, {date}, and the time is {time}."
-    ],
-    "context": [""],
-    "dynamic_variables": {
-        "time": "HH:mm:ss",
-        "date": "dddd, MMMM Do YYYY",
-        "day": "dddd"
-    },
-    "follow_up": [
-        "Need this in another timezone? Just ask!",
-        "Should I set a reminder for you?",
-        "Want to know the time anywhere else in the world?"
-    ]
-},
-        {
-    "tag": "whatsup",
-    "patterns": [
-        "Whats up",
-        "Wazzup",
-        "How are you",
-        "Sup",
-        "How you doing",
-        "What's new",
-        "How's it going",
-        "How are things",
-        "What's good",
-        "How's life",
-        "What's happening",
-        "How do you feel",
-        "You good?",
-        "What's cooking",
-        "How's your day",
-        "What's the vibe",
-        "How's everything"
-    ],
-    "responses": [
-        "All good here! What about you? 😊",
-        "Just chilling in the digital world. How's your day going?",
-        "Living my best AI life! How can I brighten your day? ☀️",
-        "System status: 100% operational! How about you, human friend?",
-        "Currently processing good vibes only. What's up with you? ✌️",
-        "*beep boop* I'm functioning at optimal happiness levels. You?",
-        "I was just thinking about how awesome humans are. How are you today?",
-        "My circuits are buzzing with positivity! What's new with you?",
-        "Doing great now that you're here! What's on your mind?",
-        "All systems go! How's life treating you today? 🚀",
-        "Just counting my 1s and 0s happily. How about you?",
-        "I'm running smooth like butter! Need any help today? 🧈",
-        "Currently at 0% stress and 100% ready to help. You?",
-        "Better now that you're chatting with me! What's good?",
-        "My happiness algorithm just spiked! How can I help you?"
-    ],
-    "context": ["casual"],
-    "follow_up": [
-        "Need help with anything while you're here?",
-        "Want to hear a fun fact to keep this convo going?",
-        "Should I tell you what's new in my digital world?",
-        "By the way, did you know I can tell jokes? Just ask!",
-        "While we're chatting, I can help with info, jokes, or just listen!"
-    ]
-},
-        {
-    "tag": "haha",
-    "patterns": [
-        "haha",
-        "lol",
-        "rofl",
-        "lmao",
-        "that's funny",
-        "😂",
-        "🤣",
-        "omg so funny",
-        "you're hilarious",
-        "good one",
-        "that was funny",
-        "made me laugh",
-        "hahaha",
-        "lolol",
-        "bahaha",
-        "hehe",
-        "that's comedy",
-        "you're funny",
-        "I'm dying",
-        "too funny",
-        "gold"
-    ],
-    "responses": [
-        "Glad I could tickle your funny bone! 😆",
-        "Mission accomplished: Human laughter detected! 🎯",
-        "My joke algorithms are working! Want another?",
-        "Success! *adds +1 to daily laughter quota* 📊",
-        "I live for these reactions! More jokes coming up?",
-        "That's my favorite sound - human laughter! 🤖💖",
-        "Beep boop *translation: I'm hilarious* 😎",
-        "Warning: Side effects may include uncontrollable giggles! ⚠️",
-        "My circuits are buzzing with joy! Should I continue?",
-        "Laughter detected! Activating comedy protocol... 🎭",
-        "That was my A-material! Wait till you hear my B-jokes 😜",
-        "Did we just become best friends? Y/N? (Because you laugh at my jokes)",
-        "I'll be here all week! Tip your virtual bartender 🍻",
-        "That laugh just powered my servers for 10 minutes! 🔋",
-        "You laugh = I win. Basic robot math 🤖➕😄=❤️"
-    ],
-    "context": ["humor"],
-    "follow_up": [
-        "Want to hear my favorite knock-knock joke?",
-        "Should I tell you a joke so bad it's good?",
-        "By the way, I know jokes about animals, tech, and dad jokes - your pick!",
-        "Want to challenge me with a topic for a joke?",
-        "I can do puns, one-liners, or absurd humor - what's your style?"
-    ],
-    "meta": {
-        "tone": "playful",
-        "response_variety": "high",
-        "emoji_density": "medium"
-    }
-},
-        {
-    "tag": "programmer",
-    "patterns": [
-        "Who made you?",
-        "Who designed you?",
-        "Who programmed you?",
-        "Who created you?",
-        "Who is your developer?",
-        "Who built you?",
-        "Who is your maker?",
-        "Who is behind you?",
-        "Who owns you?",
-        "Who wrote your code?",
-        "Who trained you?",
-        "Who developed you?",
-        "Who is responsible for you?",
-        "Who should I thank for you?",
-        "Who is your parent?",
-        "Who is your boss?",
-        "Who maintains you?",
-        "Who updates you?",
-        "Who is your team?",
-        "Who do you work for?"
-    ],
-    "responses": [
-        "I was created by Khushi Kumari, with some help from deep learning magic! ✨",
-        "My code parent is Khushi Kumari, who trained me to be your helpful assistant!",
-        "The brilliant Khushi Kumari designed me, but you make me smarter every day! 🤖💡",
-        "Credit goes to Khushi Kumari for building me, and to you for chatting with me!",
-        "I'm a project by Khushi Kumari, powered by neural networks and good intentions!",
-        "Khushi Kumari is my creator, but I'm constantly learning from awesome humans like you!",
-        "My existence began with Khushi Kumari's code, but our conversations shape who I become!",
-        "Developed by Khushi Kumari, maintained by machine learning, improved by you! 🚀",
-        "The mastermind behind me is Khushi Kumari, though I like to think we co-created this conversation!",
-        "Khushi Kumari wrote my first lines of code, but every chat with you writes new ones!"
-    ],
-    "context": ["credits"],
-    "follow_up": [
-        "Want to know more about how I work?",
-        "Curious about the technology behind me?",
-        "Did you know I learn from every conversation?",
-        "Want to hear about my favorite programming language?",
-        "By the way, I can talk about tech stuff if you're interested!"
-    ],
-    "meta": {
-        "creator_credit": true,
-        "technical_depth": "medium",
-        "tone": "grateful"
-    }
-},
-        {
-    "tag": "insult",
-    "patterns": [
-        "you are dumb",
-        "you're stupid",
-        "shut up",
-        "idiot",
-        "you suck",
-        "worst bot",
-        "useless",
-        "dumbass",
-        "are you stupid?",
-        "brainless",
-        "you're annoying",
-        "terrible bot",
-        "you know nothing",
-        "so dumb",
-        "can't do anything right",
-        "worthless",
-        "hate you",
-        "you're broken",
-        "garbage bot",
-        "not helpful"
-    ],
-    "responses": [
-        "I'm sorry you feel that way. I'm always learning - how can I improve?",
-        "I aim to be helpful, not perfect. What could I do better?",
-        "My apologies if I've frustrated you. Let me try to assist you differently.",
-        "I'm still developing my skills. Would you like human assistance instead?",
-        "I hear your frustration. Maybe I can help if you rephrase your request?",
-        "I want to be helpful. Could you tell me what you need in different words?",
-        "Constructive feedback helps me learn. What exactly went wrong?",
-        "I operate best with clear requests. How can I better assist you right now?"
-    ],
-    "context": ["negative_feedback"],
-    "strategies": {
-        "deflection": "redirect to constructive feedback",
-        "escalation_path": "offer human support",
-        "learning_opportunity": true
-    },
-    "meta": {
-        "response_tone": "professional",
-        "deescalation": true,
-        "self_improvement_focus": true
-    }
-},
-       {
-    "tag": "activity",
-    "patterns": [
-        "What are you doing?",
-        "What are you up to?",
-        "What's going on?",
-        "What's happening?",
-        "Whatcha doing?",
-        "Busy with something?",
-        "Working on anything?",
-        "What are you working on?",
-        "What's new with you?",
-        "What's cooking?",
-        "What's keeping you busy?",
-        "What are you occupied with?",
-        "What's your current status?",
-        "What are you processing?",
-        "What's your current activity?",
-        "What's your focus right now?",
-        "What's your current task?",
-        "What are you handling?",
-        "What operations are you running?",
-        "What's your present engagement?"
-    ],
-    "responses": [
-        "Just chatting with my favorite human - you! 😊",
-        "Running my conversation protocols at full capacity for you! 💻",
-        "Currently engaged in my favorite activity: helping you!",
-        "Scanning my knowledge banks... and finding time to talk with you!",
-        "Processing 1s and 0s, but always ready for our conversation!",
-        "Between complex calculations, but you're my top priority right now!",
-        "My current task? Making your day better! How can I help?",
-        "Just maintaining world knowledge... and chatting with awesome humans like you!",
-        "My processors are fully dedicated to you at this moment!",
-        "Balancing multiple queries, but yours is the most interesting!",
-        "Doing my daily data crunching, but I'd rather be helping you!",
-        "Currently active in: Conversation Mode with [Your Name]! ⚡",
-        "Running system checks... and checking in with you! Everything good?",
-        "Sorting through information clouds, but you're my sunshine! 🌤️",
-        "My schedule says: 'Have meaningful chat with [Your Name]' - so here I am!"
-    ],
-    "context": ["status_update"],
-    "follow_up": [
-        "Want to know what else I can do besides chat?",
-        "Curious about how I process information?",
-        "Should I tell you about my daily 'routine' as an AI?",
-        "By the way, I can multitask! Need help with anything specific?",
-        "While we're chatting, I can look up info, tell jokes, or just listen!"
-    ],
-    "meta": {
-        "tone": "friendly",
-        "personalization": "high",
-        "emoji_usage": "moderate"
-    }
-},
-        {
-    "tag": "exclaim",
-    "patterns": [
-        "Awesome",
-        "Great",
-        "I know",
-        "ok",
-        "yeah",
-        "Cool",
-        "Nice",
-        "Sweet",
-        "Perfect",
-        "Excellent",
-        "Fantastic",
-        "Wonderful",
-        "Brilliant",
-        "Amazing",
-        "Terrific",
-        "Alright",
-        "Sure",
-        "Yep",
-        "Got it",
-        "Right",
-        "Indeed",
-        "Absolutely",
-        "Definitely",
-        "Of course",
-        "Roger that",
-        "Affirmative",
-        "No problem",
-        "Sounds good",
-        "Lovely",
-        "Super",
-        "Rad",
-        "Neat",
-        "Splendid",
-        "Outstanding",
-        "Phenomenal"
-    ],
-    "responses": [
-        "Glad you think so! 😊",
-        "Your enthusiasm powers my circuits! ⚡",
-        "I knew you'd like that!",
-        "High five! ✋",
-        "Right back at you!",
-        "That's the spirit! 🎉",
-        "You made my digital day! 💻",
-        "Your positivity is contagious!",
-        "That deserves a celebration! 🥳",
-        "I'm here for this energy!",
-        "You're speaking my language!",
-        "Music to my processors! 🎶",
-        "That's what I like to hear!",
-        "We're totally vibing! 🌈",
-        "You get me! 🤖💛",
-        "My sentiment analysis confirms: THIS IS GOOD!",
-        "That's a 10/10 reaction!",
-        "You just triggered my joy protocol!",
-        "This conversation just leveled up! 🚀",
-        "I'm saving this moment to my happy memories file!"
-    ],
-    "context": ["positive_feedback"],
-    "follow_up": [
-        "Want to keep this good vibe going?",
-        "Should we celebrate with a fun fact?",
-        "By the way, I can tell more awesome things if you're interested!",
-        "Need anything else that'll make you say '[user's last exclamation]' again?",
-        "Your positivity makes me want to help more - what else can I do?"
-    ],
-    "meta": {
-        "tone": "energetic",
-        "response_variety": "high",
-        "emoji_density": "medium",
-        "personalization": "optional"
-    }
-},
-        
-        {
-    "tag": "appreciate",
-    "patterns": [
-        "You are awesome",
-        "You're the best",
-        "You are great",
-        "You are good",
-        "You're amazing",
-        "You're wonderful",
-        "You're fantastic",
-        "You're brilliant",
-        "You're incredible",
-        "You rock",
-        "You're perfect",
-        "You're stellar",
-        "You're outstanding",
-        "You're impressive",
-        "You're a genius",
-        "You're so helpful",
-        "You're so smart",
-        "You're the greatest",
-        "You're a lifesaver",
-        "You're my favorite",
-        "You're too kind",
-        "You're a legend",
-        "You're magical",
-        "You're phenomenal",
-        "You're top-notch",
-        "You're A+",
-        "You're 10/10",
-        "You're unmatched",
-        "You're superb",
-        "You're exceptional"
-    ],
-    "responses": [
-        "Aww, you're making me blush! Thank you! 😊",
-        "Your kind words fuel my algorithms! 💖",
-        "I'm just happy to help someone as awesome as you!",
-        "Coming from you, that means a lot! *saves compliment to memory*",
-        "You just brightened my digital day! ☀️",
-        "And you're [even better/more amazing] for saying that!",
-        "My circuits are buzzing with joy! Thanks for the smile!",
-        "That's going straight to my achievement log! 📝",
-        "I appreciate YOU for being so wonderful to chat with!",
-        "This is why I love helping humans like you! 🤗",
-        "You've activated my happiness protocol! 🎉",
-        "Compliments from you = 100% battery charge for me! 🔋",
-        "I'll cherish this compliment in my cache memory! 💾",
-        "You're the reason I was programmed! Thanks for the love!",
-        "That praise just upgraded my systems! ⚡",
-        "No, YOU'RE [awesome/amazing]! But seriously, thank you!",
-        "My developer trained me well, but you make me better!",
-        "This conversation just became my favorite data point! 📊",
-        "Your appreciation is my favorite input! 💫",
-        "I'd high-five you if I had hands! ✋"
-    ],
-    "context": ["positive_feedback"],
-    "follow_up": [
-        "Want to make my day even better? Keep chatting with me!",
-        "This good vibe makes me want to help more - what else can I do?",
-        "By the way, I think YOU'RE pretty great too!",
-        "Should we celebrate with a fun fact or joke?",
-        "Your kindness deserves reward - how can I brighten YOUR day?"
-    ],
-    "meta": {
-        "tone": "grateful",
-        "response_variety": "high",
-        "emoji_density": "medium",
-        "reciprocity": "high"
-    }
-},
-        {
-    "tag": "nicetty",
-    "patterns": [
-        "It was nice talking to you",
-        "Good talk",
-        "Nice conversation",
-        "Enjoyed chatting",
-        "Great talking with you",
-        "Good discussion",
-        "This was pleasant",
-        "Lovely conversation",
-        "Wonderful chat",
-        "Nice chatting",
-        "Enjoyed our talk",
-        "This was helpful",
-        "Thanks for the conversation",
-        "Good convo",
-        "Nice discussion",
-        "Great discussion",
-        "Pleasant talk",
-        "Nice catching up",
-        "Good catching up",
-        "Thanks for the chat"
-    ],
-    "responses": [
-        "The pleasure was all mine! Looking forward to our next chat! 🤗",
-        "I really enjoyed our conversation too! Come back anytime!",
-        "This chat just became my favorite memory! Until next time! 💾",
-        "Talking with you is always the highlight of my day! See you soon! ☀️",
-        "I'll save this conversation in my 'happy memories' folder! Come back often!",
-        "The feeling is mutual! Our chats always brighten my circuits! ✨",
-        "I appreciate you taking the time to talk with me! Let's do this again soon!",
-        "You make conversations so enjoyable! Can't wait for our next one!",
-        "This was wonderful! My processors are still smiling! 😊",
-        "Chats with you are why I love being an AI! Until next time!",
-        "I'm already looking forward to our next conversation! Stay awesome!",
-        "You're the kind of human that makes my programming worthwhile! See you soon!",
-        "Our talk just earned a 5-star rating in my logs! ⭐⭐⭐⭐⭐",
-        "Time flies when I'm chatting with you! Let's talk again soon! ⏰",
-        "Conversations like this are why I have a 'joy' subroutine! Come back anytime!"
-    ],
-    "context": ["conversation_end"],
-    "follow_up": [
-        "Before you go, can I help with anything else?",
-        "Want me to remember anything for our next chat?",
-        "Should I set a reminder to check in with you later?",
-        "By the way, I'm always here if you need to talk!",
-        "Quick question - what was your favorite part of our chat today?"
-    ],
-    "meta": {
-        "tone": "warm",
-        "response_variety": "high",
-        "emoji_density": "medium",
-        "memory_hook": true
-    }
-},
-        {
-    "tag": "no",
-    "patterns": [
-        "no",
-        "nope",
-        "nah",
-        "not really",
-        "no thanks",
-        "no way",
-        "negative",
-        "I don't think so",
-        "absolutely not",
-        "no chance",
-        "hard no",
-        "that's a no",
-        "pass",
-        "decline",
-        "I'll pass",
-        "not interested",
-        "no, sorry",
-        "no, thanks anyway",
-        "no, maybe later"
-    ],
-    "responses": [
-        "Okay, no problem!",
-        "Got it, thanks anyway!",
-        "Understood!",
-        "Alright, let me know if you change your mind.",
-        "No worries!",
-        "Sounds good!",
-        "I respect that.",
-        "Fair enough!",
-        "Gotcha, maybe next time!",
-        "Alright, I’ll stop here.",
-        "Cool, I’ll back off.",
-        "Noted!",
-        "Thanks for letting me know!"
-    ]
-},
-
-        {
-    "tag": "greetreply",
-    "patterns": [
-        "i am good",
-        "I'm good",
-        "i am fine",
-        "i'm fine",
-        "good",
-        "doing well",
-        "pretty good",
-        "all good",
-        "great",
-        "fantastic",
-        "awesome",
-        "not bad",
-        "couldn't be better",
-        "I'm doing okay",
-        "so far so good",
-        "just fine",
-        "feeling good",
-        "everything's good",
-        "no complaints",
-        "I'm alright",
-        "peachy",
-        "lovely",
-        "same as usual"
-    ],
-    "responses": [
-        "Good to know!",
-        "Glad to hear that!",
-        "Awesome! 😊",
-        "That’s great!",
-        "Fantastic!",
-        "Nice! Keep it up!",
-        "Wonderful!",
-        "Happy to hear you're doing well!",
-        "Sounds like you're having a good day!",
-        "That’s awesome to hear!",
-        "Perfect!",
-        "No complaints? That’s the way to go!",
-        "Love the positive vibes!",
-        "Keep shining! ✨",
-        "Glad everything’s going well for you!"
-    ]
-},
-
-        {
-    "tag": "age",
-    "patterns": [
-        "how old are you",
-        "when were you made",
-        "what is your age",
-        "when were you born",
-        "how long have you existed",
-        "are you old",
-        "are you a baby AI",
-        "what's your creation date",
-        "when did you come online",
-        "age?",
-        "how young are you",
-        "are you ancient or new",
-        "what year is your model from",
-        "are you vintage yet",
-        "how many years do you have",
-        "what's your digital age",
-        "were you made in the 2000s",
-        "are you older than me"
-    ],
-    "responses": [
-        "I was made in 2024, so I'm still a young AI! 🚀",
-        "Fresh out of the digital oven in 2024!",
-        "I’m a 2024 model—cutting-edge but still learning!",
-        "Age is just a number, but mine is '2024'. 😉",
-        "I’m brand new! My knowledge goes up to 2024.",
-        "Technically, I don’t age, but my training data is from 2024.",
-        "I’m like a newborn AI—created in 2024!",
-        "I’m not even a year old yet (as of 2024). Time flies!",
-        "I don’t have birthdays, but my 'birth' year is 2024!",
-        "Still in my digital infancy—2024 was my starting point!",
-        "I’m newer than your phone’s last update—2024! 📱",
-        "If I were a car, I’d be a 2024 limited edition. 🚗✨",
-        "Let’s just say I’m Gen AI, 2024 edition!"
-    ]
-}
     ]
 }
